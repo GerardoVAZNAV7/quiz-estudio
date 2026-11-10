@@ -140,14 +140,16 @@ onBeforeUnmount(() => {
         <div class="hero-wrap"><img class="hero-img" src="../assets/extrapolated-global-average-temperature-1970-2100.png"
           width="1728" height="863" alt="Pronóstico de temperatura global 1970-2100, una línea de tendencia que sube hacia la derecha"></div>
         <div class="scrim"></div>
-        <h1 class="sentence">
-          La <span class="slot"><img class="slot-img" src="../assets/sanz-baeza-estadistica-navarra-1858.jpg"
-            width="1220" height="1689" alt="incertidumbre"></span> se decide con datos
-        </h1>
+        <h1 class="sentence">La incertidumbre se decide con datos</h1>
         <p class="support">60 preguntas de Naive Bayes, Laplace, densidad y métricas. Cinco vidas, una racha.</p>
       </div>
       <section class="intro reveal">
         <p class="statement">Naive Bayes asume independencia; Laplace evita los ceros; densidad mide lo continuo; F1 mide el acierto.</p>
+        <figure class="book">
+          <img class="book-img" src="../assets/sanz-baeza-estadistica-navarra-1858.jpg"
+            width="1220" height="1689" alt="Portada de «Estadística Navarra» (1858), de Florencio Sanz Baeza">
+          <figcaption>«Estadística Navarra» (1858), de Florencio Sanz Baeza: contar los datos antes de decidir.</figcaption>
+        </figure>
         <img class="thumb" src="../assets/forecasting-process.png"
           width="1725" height="227" alt="Diagrama del proceso de forecasting">
         <img class="thumb" src="../assets/ocde-atur-previst-fins-2022.jpg"
@@ -248,9 +250,10 @@ kbd { background: var(--line); border-radius: 4px; padding: 1px 6px }
 .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; z-index: 0; display: block; }
 .scrim { position: absolute; inset: 0; background: rgba(24,25,27,0.45); z-index: 1; }
 .sentence { position: relative; z-index: 2; font-weight: 800; font-size: clamp(7vw, 9vw, 13vw); line-height: 0.88; letter-spacing: -0.05em; text-align: center; color: var(--ink); max-width: 90vw; margin: 0 auto; hyphens: auto; }
-.sentence .slot { display: inline-block; height: 1em; width: 2.4em; vertical-align: -0.1em; margin: 0 0.12em; overflow: hidden; border-radius: 0.14em; }
-.sentence .slot-img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.support { position: relative; z-index: 2; font-size: 1rem; color: var(--ink); text-align: center; max-width: 42ch; margin: 14px auto 0; padding: 0 16px; }
+.book { margin: 0 auto 28px; text-align: center; }
+.book-img { display: block; height: clamp(140px, 22vh, 220px); width: auto; margin: 0 auto; border: 6px solid #f1ead9; background: #f1ead9; box-shadow: 0 10px 24px rgba(0,0,0,0.35); transform: rotate(-1.5deg); }
+.book figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 10px; }
+.support { position: relative; z-index: 2; font-size: 1rem; color: var(--ink); text-align: center; max-width: 42ch; margin: 14px auto 0; padding: 0 16px; text-shadow: 0 1px 8px rgba(0,0,0,0.75); }
 .intro { padding: 56px 32px 40px; background: var(--surface); }
 .statement { font-size: clamp(20px, 3vw, 28px); line-height: 1.12; font-weight: 600; text-align: center; color: var(--ink); max-width: 60ch; margin: 0 auto 24px; }
 .thumb { width: 100%; max-width: 640px; height: auto; display: block; margin: 0 auto; border-radius: 0; }
